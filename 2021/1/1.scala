@@ -6,12 +6,11 @@ def readFileToListOfInts(filename: String): Seq[Int] = {
 }
 
 def countOfBiggerItems(l: Seq[Int], window: Int): Int = {
-  val result = l.sliding(window + 1)
+  l.sliding(window + 1)
     .filter( t => t.length > window && t(0) < t(window))
-    .toList
-  result.length
-
+    .toList.length
 }
+
 val lines = readFileToListOfInts("/Users/ben/git/advent_of_code/2021/1/input")
 println(countOfBiggerItems(lines, 1))
 println(countOfBiggerItems(lines, 3))
