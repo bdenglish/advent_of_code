@@ -3,7 +3,7 @@ with open('input', 'r') as f:
 lines = [l.replace('\n', '') for l in lines]
 
 
-def is_bigger_count():
+def is_bigger_count(lines):
     return len([(lines[n-1], line) for n, line in enumerate(lines) if n > 0 and int(line) > int(lines[n-1])])
 
 
