@@ -1,6 +1,5 @@
 with open('input', 'r') as f:
-    lines = f.readlines()
-lines = [l.replace('\n', '') for l in lines]
+    lines = f.read().split('\n')[:-1]
 
 
 def is_bigger_count(lines):
