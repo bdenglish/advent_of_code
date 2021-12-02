@@ -1,4 +1,8 @@
-with open('input', 'r') as f:
+import os
+
+
+base_dir = os.getenv('ADVENT_OF_CODE_BASE')
+with open(f'{base_dir}/input/2021/1/input', 'r') as f:
     lines = f.read().split('\n')[:-1]
 
 

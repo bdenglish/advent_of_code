@@ -15,7 +15,7 @@ object Day1 {
         .toList.length
     }
 
-    val lines = readFileToListOfInts("/Users/ben/git/advent_of_code/2021/1/input")
+    val lines = readFileToListOfInts("/Users/ben/git/advent_of_code/input/2021/1/input")
     println(countOfBiggerItems(lines, 1))
     println(countOfBiggerItems(lines, 3))
   }
