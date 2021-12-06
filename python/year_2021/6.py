@@ -17,7 +17,7 @@ def simulate(_state, n_days):
         state_counts[6] += t[0]
         state_counts[8] += t[0]
 
-    # need to upgrade to 2.10 for Counter.total()
+    # need to upgrade to 3.10 for Counter.total()
     return sum([state_counts[_n] for _n in range(9)])
 
 
